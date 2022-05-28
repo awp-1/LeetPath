@@ -1,6 +1,6 @@
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
-        nums.sort()
+        
         lent = len(nums)
         nums = set(nums)
         ans = []
