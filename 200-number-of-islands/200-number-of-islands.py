@@ -20,12 +20,13 @@ class Solution:
                     and grid[r+dr][c+dc] =='1' and (r+dr,c+dc) not in visited):
                         visited.add((r+dr,c+dc))
                         q.append((r+dr,c+dc))
-            
+                        
         
         for r in range(row):
             for c in range(col):
                 if grid[r][c] == '1' and (r,c) not in visited:
                     bfs(r,c)
+                    
                     island +=1
         return island 
         
